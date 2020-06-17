@@ -10,6 +10,7 @@
 
 </head>
 <body>
+
   <div id="scoreBoard">
     <div id="gameTitle">
       Rock<br />
@@ -18,12 +19,13 @@
     </div>
     <div id="score">
       <label>Score</label>
-      <div id="numericScore">70</div>
+      <div id="numericScore">--</div>
     </div>
   </div>
 
   <div id="game-area">
-    <div id="choices">
+
+    <div id="choices"  class="hidden">
       <div id="paper">
         <div class="rps-btn">
           <img class="icon" src="./images/icon-paper.svg" alt="paper-btn">
@@ -40,14 +42,49 @@
         </div>
       </div>
     </div>
-    <div id="plays">
 
+    <div id="outcome">
+      <div id="picks">
+
+        <div id="playerPick">
+          <!-- hard coded option - remove later -->
+          <div id="rock" class="playersPick">
+            <div class="rps-btn">
+              <img class="icon" src="./images/icon-rock.svg" alt="rock-btn">
+            </div>
+          </div>
+          <div class="over">You picked</div>
+        </div>
+
+        <div id="computerPick">
+          <!-- hard coded option - remove later -->
+          <div id="scissors" class="compsPick">
+            <div class="rps-btn">
+              <img class="icon" src="./images/icon-scissors.svg" alt="scissors-btn">
+            </div>
+          </div>
+          <div class="over">The house picked</div>
+        </div>
+
+      </div>
+      <div id="win-loss">
+        <div id="win">
+          YOU WIN
+        </div>
+        <div id="loss" class="hidden">
+          YOU LOSE
+        </div>
+        <div id="draw" class="hidden">
+          DRAW
+        </div>
+        <div id="playAgain">
+          PLAY AGAIN
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div id="outcome">
 
   </div>
+
 
   <div id="rules">
     R U L E S
